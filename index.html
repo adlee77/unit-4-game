@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  
     <title>Crystal Collector Game</title>
 </head>
 <body>
@@ -31,26 +31,26 @@
             <div class="col-6"><p>Each time when the game starts, the game will change the values of each crystal.</p></div>
         </div>
         <div class="row">
-            <div class="col-3">Random Number:</div>
+            <div class="col-3">Random Number: <span id="random"></span>   </div>
             <div class="col-1">
-                <div class="row">Wins: 0</div>
-                <div class="row">Losses: 0</div>
+                <div class="row" >Wins: <span id="wins"></span></div>
+                <div class="row" >Losses: <span id="losses"></span></div>
             </div>
         </div>
         <div class="row">
-            <div class="col-3"><img id="crystal" src="./assets/images/download.jpg"></div>
-            <div class="col-3"><img id="crystal2" src="./assets/images/download.jpg"></div>
-            <div class="col-3"><img id="crystal3" src="./assets/images/download.jpg"></div>
-            <div class="col-3"><img id="crystal4" src="./assets/images/download.jpg"></div>
+            <div class="col-3 crystal"  data-index=0 ><img src="./assets/images/download.jpg"></div>
+            <div class="col-3 crystal"  data-index=1 ><img src="./assets/images/download.jpg"></div>
+            <div class="col-3 crystal"  data-index=2 ><img src="./assets/images/download.jpg"></div>
+            <div class="col-3 crystal"  data-index=3 ><img src="./assets/images/download.jpg"></div>
         </div>
         <div class="row">
-            <div class="col-3">Your total score is: </div>
+            <div class="col-3">Your total score is:</div>
         </div>
         <div class="row">
-            <div class="col-3">0</div>
+            <div class="col-3"><span id="sum"></span></div>
         </div>
     </div>
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  
 <script src="./assets/javascript/game.js"></script>
 </body>
 </html>
