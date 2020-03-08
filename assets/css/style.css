@@ -1,0 +1,18 @@
+h1 {
+    background-color: aqua;
+    color: ;
+    margin-bottom: 0%;
+}
+.col-6 {
+    background-color: aqua;
+}
+.winner, .loser, .score, .random {
+    background-color: orange;
+}
+.crystal {
+    margin-left: -1.25%;
+}
+body {
+    background-color: royalblue;
+    background: url(../images/crystalCave.jpg);
+}
